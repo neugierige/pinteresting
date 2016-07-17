@@ -1,8 +1,18 @@
-$body-bg:				#2ecc71;
-$navbar-inverse-bg: 	#27ae60;
-$navbar-inverse-link-color: white;
-$brand-primary: 		#2c3e50;
+@import url(https://fonts.googleapis.com/css?family=Arbutus+Slab);
+
+$body-bg:				white;
+$font-family-sans-serif: 	'Arbutus Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$navbar-inverse-bg: 	#ecf0f1;
+$navbar-inverse-link-color: #16a085;
+$brand-primary: 		#16a085;
 $jumbotron-bg:			#ecf0f1;
 
-
 @import 'bootstrap';
+
+.center {
+	text-align: center;
+}
+
+.navbar-brand {
+	font-weight: bold;
+}
