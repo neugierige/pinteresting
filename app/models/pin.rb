@@ -4,5 +4,8 @@ class Pin < ActiveRecord::Base
 	styles: { medium: "300x300>", thumb: "100x100>" }, 
 	default_url: "/images/default_image"
 	
+	validates :image, presence: true
+	validates :description, presence: true
+
 	validates_attachment :image, content_type: { content_type: ["image/jpg", "image/jpeg", "image/png", "image/gif"] }
 end
